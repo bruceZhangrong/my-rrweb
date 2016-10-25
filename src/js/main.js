@@ -1,12 +1,12 @@
 require.config({
-	baseUrl: "/src/js",
-	waitSeconds: 0,
+	baseUrl: "/src/js/",
 	paths: {
 		// "Zepto": "common/zepto.min",
-		"jquery": "common/jquery.min",
-        "md5": "common/md5",
-        "exif": "common/exif",
-        "fastclick": "common/fastclick",
-        'angular': "common/angular.min"
+        "angular": "common/angular.min",
+        "angular-route": "common/angular-route"
+	},
+	shim: {
+		"angular-route": { exports: 'angular-route'},
+		"angular": { exports: 'angular'}
 	}
-})
+});

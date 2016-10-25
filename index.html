@@ -1,14 +1,28 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" ng-app="MyModule">
 <head>
 	<meta charset="UTF-8">
 	<title>angular</title>
 </head>
 <body>
-	
-<script data-main="/src/main" src="/src/common/require.min"></script>
+	<div>
+		<hello></hello>
+	</div>
+<script data-main="/src/js/main" src="/src/js/common/require.min.js"></script>
 <script>
-	require(['module/index']);
+	require(["module/index"]);
 </script>
+<!-- <script src="/src/js/module/index.js"></script> -->
+<!-- <script src="/src/js/common/angular.min.js"></script> -->
 </body>
+<!-- <script>
+	var myApp = angular.module('MyModule',[]);
+	myApp.directive('hello', function() {
+		return {
+			restrict: 'E',
+			template: '<div>Hi everybody!!!</div>',
+			replace: true
+		}
+	});
+</script> -->
 </html>
