@@ -1,0 +1,44 @@
+{
+  "name": "program-self",
+  "version": "1.0.0",
+  "description": "No",
+  "main": "index.js",
+  "scripts": {
+    "dev": "webpack --mode=development --watch --progress --colors",
+    "start": "npm run dev",
+    "test": "jest",
+    "ts": "npx tsc --watch"
+  },
+  "jest": {
+    "testRegex": "/test/.*.test.jsx?$"
+  },
+  "author": "Bruce",
+  "license": "ISC",
+  "devDependencies": {
+    "@babel/preset-env": "^7.6.0",
+    "acorn": "^7.1.0",
+    "babel-core": "^6.26.3",
+    "babel-eslint": "^10.0.3",
+    "babel-jest": "^24.9.0",
+    "eslint": "^6.6.0",
+    "eslint-config-standard": "^14.1.0",
+    "eslint-friendly-formatter": "^4.0.1",
+    "eslint-plugin-html": "^6.0.0",
+    "eslint-plugin-import": "^2.18.2",
+    "eslint-plugin-node": "^10.0.0",
+    "eslint-plugin-promise": "^4.2.1",
+    "eslint-plugin-standard": "^4.0.1",
+    "jest": "^24.9.0",
+    "jquery": "^3.4.1",
+    "regenerator-runtime": "^0.13.3",
+    "tslib": "^1.9.0",
+    "webpack": "^4.39.3",
+    "webpack-cli": "^3.3.8"
+  },
+  "dependencies": {
+    "@types/node": "^12.7.5",
+    "awesome-typescript-loader": "^5.2.1",
+    "rrweb": "^0.9.7",
+    "typescript": "^3.6.3"
+  }
+}
